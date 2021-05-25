@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;;
+}
+
+body a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body a:hover {
+    text-decoration: none;
+    color: dimgray;
+}
+
+/* Styling header session */
+
+header {
+    background-color: #0072D3;
+}
+
+header .brand-logo {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #FFB400;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #FFB400;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+
+
+/*
+#menu-home {
+    text-align: right;
+}
+*/
+
+/* Styling main session */
+
+section h2:first-child {
+    position: relative;
+    margin-left: 2.5em;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+section h2:first-child::before {
+    content: '';
+    display: inline-block;
+    height: 0.1em;
+    width: 2em;
+    border-bottom: 3px solid #0072D3;
+    position: absolute;
+    left: -2.5em;
+    top: 0.7em;    
+}
+
+
+/* Styling #Our-business session */
+
+#our-business .comunicating {
+    background: url(../images/Communication.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+
+}
+
+#our-business .comunicating .comunicating-content {
+    margin-left: 25px;
+}
+
+
+#our-business h2 {
+    margin-left: 118px;
+    color: aliceblue;
+}
+
+#our-business h2::before {
+    border-color: aliceblue;
+}
+
+#our-business .comunicating ul {
+    list-style-type: none;
+}
+
+/* styling icon for list of content */
+
+.badges-container {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.badges {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    align-content: center;
+}
+
+.badges-content {
+    display: inline-block;
+    width: 70%;
+    margin-left: 25px;
+}
+
+.badges-content h3, .badges-content p {
+    text-align: center;        
+}
+
+.badges#badge-1 {
+    background-image: url(../images/hand-shaking.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+.badges#badge-2 {
+    background-image: url(../images/Book-Icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+/* Styling News session*/
+
+#news .news-content {
+    padding: 15px;
+}
+
+#news .column {
+    margin: 10px 0;
+}
+
+/* Styling footer session */
+
+footer .fa-li {
+    left: -26px;
+    padding: 0;
+}
+footer li {
+}
+
+footer .fa-ul {
+    margin-left: 15px;
+}
+
+footer .block-4 .subcribe-form {
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .input-subcribe {
+    background: rgba(255,255,255,0.0);
+    border: none;
+    color: aliceblue;
+}
+
+footer input.input-subcribe:focus {
+    outline: none;
+}
+
+footer h2 {
+    color: aliceblue;
+}
+
+footer input[type="submit"] {
+    padding: 0 10px;
+}
+
+footer .copyright {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+hr.footer-hr {
+    background-color: aliceblue;
+    border-style: none;
+    height: 1px;
+}
+/***********Sub Page************/
+    
+#about-us hr, #contact hr, #business hr {
+    background-color: #0072D3;
+    border-style: none;
+    height: 3px;
+    width: 40px;
+    margin: 20px auto;
+}
+
+#contact ul {
+    list-style-type: none;
+}
+
+#contact .map-address {
+    object-fit: cover;
+}
+
+#news .news-media {
+    height: 70px;
+    overflow: hidden;
+}
+
+#news .news-media .news-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    --main-column-width: 1200px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* Header style below */
+
+header {
+    background-color: #0072D3;
+}
+
+header .brand {
+    width: var(--main-column-width, 80%);
+    min-height: 100px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+header .brand .brand-logo {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: medium;
+    color: aliceblue;
+    display: block;
+}
+
+header .brand nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header .brand nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+header .brand nav ul li a:hover {
+    color: #FFB400;
+}
+
+.banner, .banner .banner-image {
+    width: 100%;
+}
+
+/* header style above */
+/* About Us section style below */
+
+section {
+    width: var(--main-column-width, 80%);
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section h2:first-child {
+    position: relative;
+    margin-left: 2.5em;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+section h2:first-child::before {
+    content: '';
+    display: inline-block;
+    height: 0.1em;
+    width: 2em;
+    border-bottom: 3px solid #0072D3;
+    position: absolute;
+    left: -2.5em;
+    top: 0.7em;    
+}
+
+.first-column, .second-column {
+    width: 50%;
+}
+
+/* About Us section style above */
+/* Our business section style below */
+
+#our-business {
+    width: 100%;
+    min-height: 400px;
+    height: 500px;
+}
+
+#our-business .first-column {
+    background-image: url(./images/education.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#our-business .second-column {
+    background-image: url(./Images/Communication.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-left: -25px;
+    margin-top: 25px;
+}
+
+#our-business .second-column h2 {
+    margin-left: 118px;
+}
+
+#our-business .second-column h2:first-child::before {
+    border-color: #ffffff;
+}
+
+#our-business .second-column a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.badge-container {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.badge-container a {
+    text-decoration: none;
+}
+
+.badge-container h3 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.badge {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.badge#badge-1 {
+    background-image: url(./images/hand-shaking.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+.badge#badge-2 {
+    background-image: url(./images/Book-Icon.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+.badge-content {
+    width: 80%;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Our business section style above */
+/* News section style below */
+
+#news .title-section {
+    width: 100%;
+}
+
+#news .title-section h3 {
+    font-size: 26px;
+}
+
+#news .column {
+    width: 32%;
+}
+
+#news .border-container {
+    border: 1px solid black;
+}
+
+#news .news-content {
+    padding: 5px;
+}
+
+#news .news-content h4 {
+    font-size: 26px;
+}
+
+#news .news-content a, h4 {
+    text-decoration: none;
+    color: #000000;
+}
+/* News section style above */
+/* Contact section style below */
+
+#contact .first-column {
+    padding-right: 2%;
+    width: 48%;
+}
+
+#contact textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#contact .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#contact .input-group input {
+    display: block;
+    width: 30%;
+    border-radius: 5px;
+    margin: 10px 0;
+    line-height: 28px;
+}
+#contact form {
+    position: relative;
+}
+
+#contact form .submit {
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #FFB400;
+    color: #ffffff;
+    border-radius: 7px;
+    position: absolute;
+    left: 92%;
+}
+/* Contact section style above */
+/* Footer section style below */
+
+footer {
+    background-color: #1B1919;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+footer .footer-block {
+    width: 21%;
+    padding: 10px 20px;
+}
+
+footer .footer-block h2:first-child {
+    margin-left: 0;
+}
+
+footer .footer-block h2:first-child::before {
+    content: none;
+}
+
+footer .footer-block a, .footer-block p {
+    color: #ada5a5;
+    line-height: 18px;
+    padding: 5px 0;
+}
+
+footer .footer-block ul {
+    margin-left: 1.5em;
+}
+
+footer .block-4 .input-subcribe {
+    background-color: rgba(255,255,255,0);
+    border-style: none;
+    width: 75%;
+    color: aliceblue;
+    padding: 2px;
+}
+
+footer .block-4 .input-subcribe:focus {
+    border-color: rgba(255,255,255,0);
+}
+
+
+footer .block-4 .subcribe-form {
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    background-color: aliceblue;
+    border-style: none;
+    height: 1px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+img {
+    width: 100%;
+}
+
+main {
+    height: 400px;
+    overflow: hidden;
+}
+
